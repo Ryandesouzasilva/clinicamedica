@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+ #button1{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #00ff0d;
+    border-radius: 45%;
+    margin-right: 90%;
+    margin-left: 100%;
+    position: relative;
+}
+#button1:hover{
+    background-color: #00ff0d;
+  color: white;
+}
+
+#button2{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #00ff0d;
+    border-radius: 45%;
+    margin-right: 90%;
+    margin-left: 100%;
+}
+#button2:hover{
+    background-color: #00ff0d;
+  color: white;
+}
+
+#button3{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #00ff0d;
+    border-radius: 45%;
+    margin-right: 90%;
+    margin-left: 100%;
+}
+#button3:hover{
+    background-color: #00ff0d;
+  color: white;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+        <div id="div1"> 
+          <a href="./index.html"><button id="button1"> Home<a></button></a>
+          <a href="./script/consultas.html"><button id="button2">Consulta<a></button></a>
+          <a href="C:/Users/Ryan.silva/Documents/MED/Form%20cnpj.html"><button id="button3">fale conosco<a></button>
+        </div>
+      </header>
+    <h1>FORM</h1>
+    <p>cadastre-se:</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">paciente: <input id="Usuario" name=" Usuario" type="text" required /></label>
+        <label for="last-name">Senha: <input id="Senha" name="Senha" type="password" required /></label>
+        <label for="email">CPF: <input id="CPF" name="CPF" type="text" required /></label>
+        <label for="new-password">CNPJ: <input id="CNPJ" name="CNPJ" type="text" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <button type="button" onclick="valida()"> Enviar </button>
+      <button type="button" onclick="geraCnpj()"> gerar Cnpj </button>
+      <button type="button" onclick="geraCpf()"> gerar Cpf </button>
+    </form>
+    <div id="result"></div>
+<script>
+    function valida() {
+        resolvaCPF(document.getElementById("CPF").value);
+    }
+    
+    function resolvaCPF(CPFarray) {
+        //  4  6  2  9  2  2  9  1  8 3 9
+        // 10  9  8  7  6  5  4  3  2
+        // 40+54+16+63+12+10+36+03+16=250
+
+
+        console.log(CPFarray[0]);
+        let sum=CPFarray[0]*10;
+        sum+=CPFarray[1]*9;
+        sum+=CPFarray[2]*8;
+        sum+=CPFarray[3]*7;
+        sum+=CPFarray[4]*6;
+        sum+=CPFarray[5]*5;
+        sum+=CPFarray[6]*4;
+        sum+=CPFarray[7]*3;
+        sum+=CPFarray[8]*2;
+    
+        console.log(sum);
+        let remainder = 11-(sum%11);
+        if( remainder <=2){
+            remainder = 0;
+        }
+        if(remainder != CPFarray[9]) {
+            alert("CPF Inválido!");
+        }
+        if(remainder = CPFarray[9]) {
+            alert("CPF valido!");
+        }
+        let sum1=CPFarray[0]*11;
+        sum1+=CPFarray[1]*10;
+        sum1+=CPFarray[2]*9;
+        sum1+=CPFarray[3]*8;
+        sum1+=CPFarray[4]*7;
+        sum1+=CPFarray[5]*6;
+        sum1+=CPFarray[6]*5;
+        sum1+=CPFarray[7]*4;
+        sum1+=CPFarray[8]*3;
+        sum1+=CPFarray[9]*2;
+        console.log(sum1);
+        let remainder1 = 11-(sum1%11);
+        console.log(11-(sum1%11));
+        if( remainder <=2){
+            remainder = 0;
+        }
+        if(remainder != CPFarray[10]) {
+            alert("CPF Inválido!");
+        }
+        if(remainder = CPFarray[10]) {
+            alert("CPF valido!");
+        }
+    }
+
+    function valida() {
+        resolvaCNPJ(document.getElementById("CNPJ").value);
+    }
+    
+    function resolvaCNPJ(CNPJarray) {
+        
+
+
+
+        let sum=CNPJarray[0]*5;
+        sum+=CNPJarray[1]*4;
+        sum+=CNPJarray[2]*3;
+        sum+=CNPJarray[3]*2;
+        sum+=CNPJarray[4]*9;
+        sum+=CNPJarray[5]*8;
+        sum+=CNPJarray[6]*7;
+        sum+=CNPJarray[7]*6;
+        sum+=CNPJarray[8]*5;
+        sum+=CNPJarray[9]*4;
+        sum+=CNPJarray[10]*3;
+        sum+=CNPJarray[11]*2;
+        console.log(sum);
+        let remainder = 11-(sum%11);
+        if( remainder <=2){
+            remainder = 0;
+        }
+        if(remainder != CNPJarray[12]) {
+            alert("CNPJ Inválido!");
+        }
+        if(remainder = CNPJarray[12]) {
+            alert("CNPJ valido!");
+        }
+        console.log(CNPJarray[12]);
+        let sum1=CNPJarray[0]*6;
+        sum1+=CNPJarray[1]*5;
+        sum1+=CNPJarray[2]*4;
+        sum1+=CNPJarray[3]*3;
+        sum1+=CNPJarray[4]*2;
+        sum1+=CNPJarray[5]*9;
+        sum1+=CNPJarray[6]*8;
+        sum1+=CNPJarray[7]*7;
+        sum1+=CNPJarray[8]*6;
+        sum1+=CNPJarray[9]*5;
+        sum1+=CNPJarray[10]*4;
+        sum1+=CNPJarray[11]*3;
+        sum1+=CNPJarray[12]*2;
+        console.log(sum1);
+        let remainder1 = 11-(sum1%11);
+        if( remainder <=2){
+            remainder = 0;
+        }
+        if(remainder != CNPJarray[13]) {
+            alert("CNPJ Inválido!");
+        }
+        if(remainder = CNPJarray[13]) {
+            alert("CNPJ valido!");
+        }
+    }
+    function geraCnpj(CNPJarray) {
+        var numeroAleatorio = Math.floor(Math.random() * 10) + 1;
+        console.log(numeroAleatorio);
+        alert(numeroAleatorio)
+    }
+    function geraCpf(CPFarray) {
+        var numeroAleatorio1 = Math.floor(Math.random()* 900000000) + 1000000000;
+        Cpfarray
+        console.log(numeroAleatorio1);
+        alert(numeroAleatorio1)
+    }
+    </script>
+  </body>
+  
+</html>

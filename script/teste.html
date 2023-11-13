@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+<script>
+    let var1="Olá Mundo";
+    let var2=10;
+    let var3=5.33;
+    let var4=[4,3,5,8];
+    let var5=[
+        [1,"email1@educ.com"],
+        [2,"email2@educ.com"]
+        
+    ] 
+
+    for(i=0;i<var5.length;i++) {
+        console.log(var5[i]);
+    }
+
+    i=0;
+    while (i<var4.length) {
+        console.log(var4[i]);
+        i++;
+    }
+    
+
+    alert(var1+var2+var3);
+    itos(10)  
+    itos(5.33)  
+
+    //Calculo de IR
+    // IR = Salario Base (SB) * %Desconto - Desconto Padrão
+    // SB = Salario Bruto - INSS
+    //INSS = Salario Bruto * %Desconto 
+
+    //tabela INSS
+    //0 - 1320  7.5%  0.00
+    //1320.01 - 2571.29  9,0%  19.80
+    //2571.30 - 3845.94  12.0%  96.94
+    //3856.95 - 7507.49  14.0%  174.08
+    
+
+    // Tabela IR
+    //0       - 2112.00  0.0%    0.00
+    //2112.01 - 2826.65   7.5%   158.40
+    //2826.66 - 3751.06  15.0%   370.40
+    //3751.07 - 4664.68  22.5%   651.73
+    // Acima de 4664.68  27.5%   884.96
+
+
+    //Salario Bruto = 20000
+    //INSS = 7507.49 * 0.14 = 1051.05
+    //SB = 20000 - 1051.05 = 18948.95
+    //IR = 18948.95 * 0.275 - 884.96 = 5210.96 - 884.96 = 5210.96 - 884.96 = 5210.96 - 884.96 = 4326,00
+
+    function inss(salbruto) {
+        alert(SalBruto);
+        var inss=0;
+        if(SalBruto > 0 && SalBruto <= 1320.0) {
+            percINSS = 0.75;
+            descinss = 0.0;
+        }
+        alert(Salbruto.toString()+"  "+percINSS.toString()+"  "+descinss.toString);
+
+    }
+    console.log(inss(1000));
+
+    function soma(a,b){
+        return 
+    }
+    function calcinss(salbruto){
+        return inss;
+    }
+    function calcir(salbase){
+        return ir
+    }
+    function salliq(salbruto){
+        inss=calcinss(salbruto);
+        ir=calcinss(salbruto);
+        return salbruto-inss-ir;
+    }
+    var 
+
+    var SalBruto=20000;
+    var SalBase=0;
+    var INSS=0; 
+    var IR=0
+    var percINSS=0.075;
+    var descinss=0;
+    var percIR=0;
+    var descir=0;
+
+    if (SalBruto>1320) {
+        if(SalBruto>2571.29)
+           if(SalBruto>3845.94)
+              if(SalBruto>7507.49)
+                 INSS=1051.05;
+           }
+           else{
+            percINSS=0.14;
+            descinss=174.08;
+           }
+        else{
+            percINSS=0.12;
+            descinss=96.94;
+        }
+    else{
+        percINSS=0.09;
+        descinss=19.80;
+    }
+
+   INSS = SalBruto*percINSS-descinss;
+   if(INSS > );
+   SalBase = SalBruto - INSS;
+
+</script>
+</body>
+</html>

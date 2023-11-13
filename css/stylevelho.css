@@ -1,0 +1,73 @@
+
+
+h1 {
+  margin-left: 40%;
+  margin-right: 15%;
+
+}
+h2 {
+  margin-left: 20%;
+  margin-right: 15%;
+}
+h3 {
+  margin-left: 20%;
+  margin-right: 15%;
+}
+.div1{
+  display: inline-block;
+}
+p{
+  margin-left: 35%;
+  margin-right: 15%;
+}
+#img2{
+  max-width: 1%;
+}
+
+#img1 {
+  width: 700px;
+  margin-left: 20%;
+  margin-right: 35%;
+  margin-bottom: -10%;
+
+
+}
+footer{
+  margin-left: 40%;
+  margin-right: 35%
+}
+.div1 {
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 30%; teste
+  height: 30%; */
+  
+} 
+.fieldset2{
+  margin-left: 40%;
+  margin-right: 30%;
+}
+
+.fieldset1{
+  margin-left: 10%;
+  margin-right: 70%;
+} /* outra imagem de fundo: https://th.bing.com/th/id/R.abc6251ac282258a8b90b447315f9cf1?rik=vpg7DcYnlRNwGQ&riu=http%3a%2f%2fsereneaquarium.com.au%2fwp-content%2fuploads%2f2017%2f12%2fSerene-Background-Blue.jpg&ehk=e6P5YTfeAvG8OeG3ieOvYmNuX4KLnkj9cVm3iJP3ZQ8%3d&risl=&pid=ImgRaw&r=0)*/
+
+body {
+
+  background-image: url(https://th.bing.com/th/id/R.2f33eccb016699f0575049cc457c6385?rik=jQFI7PQy2UVY9g&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fMQy6rhu.jpg&ehk=KzK%2fyg3TTOHhej%2f9yu%2b8pJrL9%2fKSIfdTULPLUQ%2fiB6o%3d&risl=&pid=ImgRaw&r=0); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  height: 1000px;
+  width: 1000px;
+}
+#terms-and-conditions{
+  color: honeydew;
+}
+
+#logoP{
+margin-right: auto;
+margin-left: auto;  
+}
+/*  */

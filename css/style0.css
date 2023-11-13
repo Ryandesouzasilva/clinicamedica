@@ -1,0 +1,118 @@
+p {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size:xx-large;
+}
+
+ul {
+    display: inline;
+    list-style-type: none;
+}
+
+body {
+    padding: 0%;
+    background-image: url(https://th.bing.com/th/id/R.2f33eccb016699f0575049cc457c6385?rik=jQFI7PQy2UVY9g&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fMQy6rhu.jpg&ehk=KzK%2fyg3TTOHhej%2f9yu%2b8pJrL9%2fKSIfdTULPLUQ%2fiB6o%3d&risl=&pid=ImgRaw&r=0); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 85%;
+    width: 85%;
+
+}
+/*footer{
+
+}*/
+
+img {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 50%;
+}
+
+/* button {
+    
+}*/
+a{
+    text-decoration: none;
+}
+
+#div1{
+   position: absolute;
+   margin-top: 0; 
+}
+
+#button1{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #00ff0d;
+    border-radius: 45%;
+    margin-right: 90%;
+    margin-left: 100%;
+    position: fixed;
+  bottom: 500px;
+  right: -1050px;
+  width: 115px;
+}
+#button1:hover{
+    background-color: #00ff0d;
+  color: white;
+}
+
+#button2{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #00ff0d;
+    border-radius: 45%;
+    margin-right: 90%;
+    margin-left: 100%;
+    position: fixed;
+  bottom: 470px;
+  right: -1050px;
+  width: 115px;
+}
+#button2:hover{
+    background-color: #00ff0d;
+  color: white;
+}
+
+#button3{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #00ff0d;
+    border-radius: 45%;
+    margin-right: 90%;
+    margin-left: 100%;
+    position: fixed;
+  bottom: 440px;
+  right: -1050px;
+  width: 115px;
+}
+#button3:hover{
+    background-color: #00ff0d;
+  color: white;
+}
+
+#button4{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #00ff0d;
+  border-radius: 45%;
+  margin-right: 90%;
+  margin-left: 100%;
+  position: fixed;
+bottom: 410px;
+right: -1050px;
+width: 115px;
+}
+
+#button4:hover{
+  background-color: #00ff0d;
+  color: white;
+}
+
+.fieldset{
+  border-radius: 5%;
+}

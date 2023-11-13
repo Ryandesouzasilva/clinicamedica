@@ -1,0 +1,94 @@
+#ft1 {
+    float: left;
+    padding-right: 50px;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+/*#ft2{
+     
+        margin-left: 300px;
+        margin-top: -340px;
+}
+*/
+#ft2{
+    margin-right: auto;
+}
+#ft3 {
+    float: left;
+    padding-right: 60px;
+    margin-right: 25%;
+    margin-left: 20%;
+}
+#ft4{
+    margin-right: auto;
+}
+
+#ft5{
+    float: left;
+    padding-right: 60px;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+#ft6{
+    margin-right: auto;
+}
+body {
+  
+    background-image: url(https://th.bing.com/th/id/R.2f33eccb016699f0575049cc457c6385?rik=jQFI7PQy2UVY9g&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fMQy6rhu.jpg&ehk=KzK%2fyg3TTOHhej%2f9yu%2b8pJrL9%2fKSIfdTULPLUQ%2fiB6o%3d&risl=&pid=ImgRaw&r=0); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 1350px;
+    width: 1000px;
+  }
+  h2{
+text-align: center;
+margin-left: 22%;
+  }
+
+#button{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #00ff0d;
+    border-radius: 45%;
+    margin-right: 90%;
+    margin-left: 100%;
+    position: fixed;
+  bottom: 500px;
+  left: -1050px;
+}
+#button:hover{
+    background-color: #00ff0d;
+  color: white;
+}
+#button2{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #00ff0d;
+    border-radius: 45%;
+    margin-right: 90%;
+    margin-left: 100%;
+    position: fixed;
+    bottom: 530px;
+    right: -1050px;
+}
+#button2:hover{
+    background-color: #00ff0d;
+  color: white;
+}
+#button3{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #00ff0d;
+    border-radius: 45%;
+    margin-right: 90%;
+    margin-left: 100%;
+    position: fixed;
+  bottom: 560px;
+  right: -1050px;
+}
+#button3:hover{
+    background-color: #00ff0d;
+  color: white;
+}

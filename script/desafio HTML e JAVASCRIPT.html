@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p>porfavor, preencha os blocos abaixo corretamente</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="usuario">usuario: <input id="usuario" type="usuario" required /></label><br><br>
+        <label for="senha">senha: <input id="senha" type="senha" required /></label><br><br>
+        <label for="cpf">cpf: <input id="cpf" type="cpf" required /></label><br><br>
+        <label for="cnpj">cnpj: <input id="cnpj" type="cnpj" required /></label><br><br>
+      </fieldset>
+        <input type="submit" value="Submit" />
+        
+        <script>
+            function validaCPF(cpf) {
+                // "0  8  6  9  9  8  5  3  8  8  2"
+                // 10  9  8  7  6  5  4  3  2
+                // 0+72+48+63+54+40+20+09+16=322
+                // 322%11 = quoc 29 resto 3      11-3=8
+
+                // "0  8  6  9  9  8  5  3  8  8  2"
+                // 11 10  9  8  7  6  5  4  3  2
+                //  0+80+54+72+63+48+25+12+24+16=394
+                // 394%11 = quoc 35 resto 9   11-9=2
+
+                let soma=cpf[0]*10;
+                soma+=cpf[1]*9;
+                ... 
+                let resto=soma%11;
+                let dig1=11-resto;
+
+                return "OK"
+            }
+
+
+            function validaCNPJ(cnpj) {
+                // 8  1. 9  8  9. 3  7  2 /0 0 0 1 - 94
+                // 5  4  3  2  9  8  7  6  5  4  3  2
+                // 40+04+27+16+81+24+49+12+00+00+00+02=255
+                // 255/11=23 resto=2   dig1=11-2=9
+                // 8  1. 9  8  9. 3  7  2 /0  0  0  1- 9 4
+                // 6  5  4  3  2  9  
+            }
+      
+            
